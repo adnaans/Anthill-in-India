@@ -8,6 +8,10 @@
 	color: white;
 }
 
+.serif{
+	font-family: "Liberation Serif";
+}
+
 @media screen and (min-width: 320px) {}
 
 @media screen and (min-width: 480px) {}
@@ -56,6 +60,33 @@
 		background-size: 100%;
 		background-position: center top;
 		background-repeat: no-repeat;
-		height: 720px;
+		height: auto;
+	}
+
+	#tag{
+		padding-top: 300px;
+	}
+
+	#tag h1{
+		font-family: "Fira Sans";
+		font-size: 72px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+	#tag h1 span{
+		padding: 20px;
+		border: 2px solid white;
+		outline: 2px solid white;
+		outline-offset: 5px;
+	}
+
+	#tag hr{
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#tag h3{
+		font-size: 32px;
 	}
 }
