@@ -80,6 +80,26 @@
 		font-size: 32px;
 	}
 
+	section{
+		margin: 0;
+		background: url('../img/page.png');
+		width: auto;
+		position: relative;
+		display: block;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+
+	.card{
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
 	footer{
 		background: black;
 	}
