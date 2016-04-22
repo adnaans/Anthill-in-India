@@ -8,40 +8,28 @@
 	color: white;
 }
 
-.serif{
-	font-family: "Liberation Serif";
-}
-
 @media screen and (min-width: 320px) {}
 
 @media screen and (min-width: 480px) {}
 
-@media screen and (min-width: 640px) {}
-
 @media screen and (min-width: 720px) {}
 
-@media screen and (min-width: 1080px) {}
-
 @media screen and (min-width: 1200px) {
+	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
+	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
+	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
 	nav{
+		display: inline;
 		position: fixed;
 		width: 100%;
 		height: auto;
 		margin: 0;
 		padding: 15px;
-		background: transparent;
-		-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
-		-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
-		box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
 	}
-
-	#links{
-		display: inline;
-		margin-top: -50px;
-		float: right;
-	}
-
+	
 	nav a{
+		padding-top: 15px;
+		float: right;
 		font-family: 'Roboto Condensed';
 		padding-left: 40px;
 		padding-right: 40px;
@@ -60,11 +48,12 @@
 		background-size: 100%;
 		background-position: center top;
 		background-repeat: no-repeat;
+		background-attachment: fixed;
 		height: auto;
 	}
 
 	#tag{
-		padding-top: 300px;
+		padding-top: 450px;
 	}
 
 	#tag h1{
@@ -88,5 +77,9 @@
 
 	#tag h3{
 		font-size: 32px;
+	}
+
+	footer{
+		background: black;
 	}
 }
