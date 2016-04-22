@@ -44,16 +44,17 @@
 	}
 
 	header{
-		background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)), url("../img/header.jpg");
+		background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)), url("../img/header.jpg");
 		background-size: 100%;
-		background-position: center top;
+		background-position: center 80%;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		height: auto;
 	}
 
 	#tag{
-		padding-top: 450px;
+		padding-top: 270px;
+		padding-bottom: 200px;
 	}
 
 	#tag h1{
