@@ -45,6 +45,6 @@ def takeFeedback():
     email = request.forms.get("email")
     p = multiprocessing.Process(target=sendIrc, args=(name,email,lines,))
     p.start()
-    redirect("/")
+    redirect(request.environ['HTTP_REFERER'])
 
 run(host="0.0.0.0",port=8085,debug=False)
