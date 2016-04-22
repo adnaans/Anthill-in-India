@@ -87,7 +87,7 @@ nav{z-index: 9999;}
 		font-size: 32px;
 	}
 
-        #content{z-index: 0;}
+	#content{z-index: 0;}
 
 	section{
 		margin: 0;
