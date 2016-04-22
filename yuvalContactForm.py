@@ -47,4 +47,4 @@ def takeFeedback():
     p.start()
     redirect("/")
 
-run(host="zippynk.com",port=8085,debug=False)
+run(host="0.0.0.0",port=8085,debug=False)
