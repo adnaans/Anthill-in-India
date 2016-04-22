@@ -1,5 +1,9 @@
 @import url('fonts.css');
 
+iframe {
+    border: none;
+}
+
 *{
 	margin: 0;
 	padding: 0;
