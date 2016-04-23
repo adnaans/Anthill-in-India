@@ -1,5 +1,9 @@
 @import url('fonts.css');
 
+iframe {
+    border: none;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -29,7 +33,7 @@ nav{z-index: 9999;}
 		margin: 0;
 		padding: 15px;
 	}
-
+	
 	nav a{
 		padding-top: 20px;
 		float: right;
@@ -135,6 +139,7 @@ nav{z-index: 9999;}
 
 	.card p{
 		font-size: 20px;
+		margin-top: -10px;
 		color: #191919;
 	}
 
@@ -151,6 +156,7 @@ nav{z-index: 9999;}
 	}
 
 	.credit{
-		color: #191919;	
+		color: #191919;
+		
 	}
 }

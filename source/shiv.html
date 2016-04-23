@@ -11,15 +11,19 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link href="css/styles.css" rel="stylesheet" />
-	<link href="css/grid.css" rel="stylesheet" />
+	<!--[if lte IE 8]>
+			<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+			<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<!--<![endif]-->
 </head>
 <body>
 	<!-- Content -->
 	<div class="cbp-af-header">
 		<div class="cbp-af-inner">
 			<nav class="init">
-				<img src="img/logo.png" width="109" height="66"/>
-				<a href="#contact"><i class="fa fa-at fa-fw">&nbsp;</i>Contact</a>
+				<img src="img/favicon.png" width="64" height="64"/>
 				<a href="#donate"><i class="fa fa-usd fa-fw">&nbsp;</i>Donate</a>
 				<a href="#social"><i class="fa fa-twitter fa-fw">&nbsp;</i>Social</a>
 				<a href="#platform"><i class="fa fa-list-alt fa-fw">&nbsp;</i>Platform</a>
@@ -27,16 +31,15 @@
 			</nav>
 		</div>
 	</div>
-
+	
 	<header>
 		<center id="tag">
 			<h1><span>Yuval Steinhart for President</span></h1>
 			<br />
 			<hr width="90%"/>
 			<br />
-			<h3>The candidate <span style="font-style: italic;">Yuval</span> been waiting for.</h3>
+			<h3>The&nbsp;candidate&nbsp;<span style="font-style: italic;">Yuval</span>&nbsp;been&nbsp;waiting for.</h3>
 		</center>
-		<center><div class="profile"></div></center>
 	</header>
 
 	<div id="content">
@@ -44,13 +47,7 @@
 			<div class="card">
 				<h1>About Yuval</h1>
 				<hr /><br />
-				<p>Yuval is ze hweiner. He is the presidont u niid.</p>
-			</div>
-		</section>
-		<section id="platform">
-			<div class="card">
-				<h1>Platform</h1>
-				<hr /><br />
+				<p>Yuval is </p>
 			</div>
 		</section>
 		<section id="social">
@@ -58,38 +55,33 @@
 				<h1>Social Media</h1>
 				<hr /><br />
 				<a class="twitter-timeline" href="https://twitter.com/Yuval2k16" data-widget-id="723535481334456320">Tweets by @Yuval2k16</a>
-
+			</div>
+		</section>
+		<section id="platform">
+			<div class="card">
+				<h1>Plans for the Future</h1>
+				<hr /><br />
 			</div>
 		</section>
 		<section id="donate">
 			<div class="card">
 				<h1>Donate to the Campaign</h1>
 				<hr /><br />
-				<p>Talk to one of the Freedom party volunteers on campus:</p>
 			</div>
 			<br /><hr class="future" /><br />
 		</section>
 	</div>
-
-<!-- <h1>Contact Us</h1>
-					<form action="http://zippynk.com:8085/submit" method="post">
-						<p><label>Name: </label><input name="name" /></p>
-						<p><label>Email: </label><input name="email" /></p>
-						<p>Message:<br/><textarea name="message"></textarea></p>
-						<p><input type="submit" name="submit" /></p>
-					</form>
-					<hr /><br /> -->
-
-
 	<footer>
-		
+		<div class="pure-g">
+			<div class="pure-u-1-1"></div>
+		</div>
 		<center><span class="credit">Paid for by the Yuval Steinhart for President Foundation. &copy; 2016.</span></center>
 	</footer>
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="js/classie.js"></script>
-	<script src="js/header.js"></script>
 	<script src="js/plugins.js"></script>
+	<script src="js/header.js"></script>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
