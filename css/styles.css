@@ -135,7 +135,7 @@ nav{z-index: 9999;}
 		display: block;
 	}
 
-	.card p{
+	.card p, form input, form, form textarea{
 		font-size: 20px;
 		color: #191919;
 	}
@@ -176,10 +176,23 @@ nav{z-index: 9999;}
 	.credit{
 		color: #191919;
 	}
+
 	form{
 	    color: #191919;
 	}
-	label{
+
+	form label{
 	    color: #191919;
+	}
+
+	form input:focus, form textarea:focus{
+		outline: none;
+	}
+
+	form input, form textarea{
+		color: #191919;
+		padding: 5px;
+		border: none;
+		border-bottom: 1px solid #191919;
 	}
 }
