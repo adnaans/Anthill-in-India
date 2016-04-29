@@ -138,6 +138,7 @@ nav{z-index: 9999;}
 	.card p, form input, form, form textarea{
 		font-size: 20px;
 		color: #191919;
+		resize: none;
 	}
 
 	.twitter{
@@ -194,5 +195,17 @@ nav{z-index: 9999;}
 		padding: 5px;
 		border: none;
 		border-bottom: 1px solid #191919;
+	}
+
+	form input[type="submit"]{
+		background: transparent;
+		border: 1px solid black;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+
+	form input[type="submit"]:hover{
+		background: black;
+		color: white;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
 	}
 }
