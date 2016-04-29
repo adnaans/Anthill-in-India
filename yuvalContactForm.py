@@ -25,7 +25,8 @@ def sendIrc(name,email,lines):
     for nick in nicklist:
         bot.send(nick,"New message from {0}; reply to {1}".format(name,email))
         for i in lines:
-            bot.send(nick,i.strip())
+            if not i.strip() == "":
+                bot.send(nick,i.strip())
         bot.send(nick,"End message.")
         sleep(1)
         bot.send_raw("PONG")
