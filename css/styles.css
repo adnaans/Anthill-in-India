@@ -10,8 +10,375 @@
 
 nav{z-index: 9999;}
 
-
 @media screen and (min-width: 320px) {
+	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
+	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
+	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
+	.normal .fa{color: #191919;}
+	nav{
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 15px;
+	}
+
+	header{
+		background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)), url("../img/header.jpg");
+		background-size: 100%;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: auto;
+	}
+
+	#tag{
+		padding-top: 150px;
+		padding-bottom: 200px;
+	}
+
+	#tag h1{
+		font-family: "Fira Sans";
+		font-size: 22px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+    #tag h2{
+		font-family: "Fira Sans";
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+	#tag h1 span{
+		padding: 20px;
+		border: 2px solid white;
+		outline: 2px solid white;
+		outline-offset: 5px;
+	}
+
+	#tag hr{
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#tag h3{
+		font-size: 18px;
+	}
+
+	.profile{
+		margin-top: -150px;
+		margin-left: -5%;
+		position: absolute;
+		background: url('../img/yuval.jpg');
+		width: 96px;
+		height: 96px;
+		display: inline;
+		border-radius: 100%;
+		z-index: 20;
+		background-size: 100%;
+		background-position: center center;
+	}
+
+	.image{width: 27.25px;height: 15px;}
+
+	#content{z-index: 0;}
+
+	section{
+		margin: 0;
+		background: url('../img/page.png');
+		width: auto;
+		position: relative;
+		display: block;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+
+	.card{
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.card h1{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 32px;
+	}
+
+	.card h2{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 24px;
+	}
+
+	.card hr{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 25%;
+		float: left;
+		display: block;
+	}
+
+	.card p, form input, form, form textarea{
+		font-size: 20px;
+		color: #191919;
+		resize: none;
+	}
+
+	.twitter{
+		display: inline-block;
+		width: 47.5;
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.ig{
+		display: none;
+	}
+
+	.future{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 100%;
+		display: block;
+	}
+
+	footer{
+		background: url('../img/page.png');
+		color: #191919;
+	}
+
+	.credit{
+		color: #191919;
+	}
+
+	form{
+	    color: #191919;
+	}
+
+	form label{
+	    color: #191919;
+	}
+
+	form input:focus, form textarea:focus{
+		outline: none;
+	}
+
+	form input, form textarea{
+		color: #191919;
+		padding: 5px;
+		border: none;
+		border-bottom: 1px solid #191919;
+	}
+
+	form input[type="submit"]{
+		background: transparent;
+		border: 1px solid black;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+
+	form input[type="submit"]:hover{
+		background: black;
+		color: white;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
+	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
+	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
+	.normal .fa{color: #191919;}
+	nav{
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 15px;
+	}
+
+	header{
+		background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)), url("../img/header.jpg");
+		background-size: 100%;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: auto;
+	}
+
+	#tag{
+		padding-top: 150px;
+		padding-bottom: 200px;
+	}
+
+	#tag h1{
+		font-family: "Fira Sans";
+		font-size: 32px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+    #tag h2{
+		font-family: "Fira Sans";
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+	#tag h1 span{
+		padding: 20px;
+		border: 2px solid white;
+		outline: 2px solid white;
+		outline-offset: 5px;
+	}
+
+	#tag hr{
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#tag h3{
+		font-size: 24px;
+	}
+
+	.profile{
+		margin-top: -150px;
+		margin-left: -5%;
+		position: absolute;
+		background: url('../img/yuval.jpg');
+		width: 96px;
+		height: 96px;
+		display: inline;
+		border-radius: 100%;
+		z-index: 20;
+		background-size: 100%;
+		background-position: center center;
+	}
+
+	.image{width: 27.25px;height: 15px;}
+
+	#content{z-index: 0;}
+
+	section{
+		margin: 0;
+		background: url('../img/page.png');
+		width: auto;
+		position: relative;
+		display: block;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+
+	.card{
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.card h1{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 32px;
+	}
+
+	.card h2{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 24px;
+	}
+
+	.card hr{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 25%;
+		float: left;
+		display: block;
+	}
+
+	.card p, form input, form, form textarea{
+		font-size: 20px;
+		color: #191919;
+		resize: none;
+	}
+
+	.twitter{
+		display: inline-block;
+		width: 47.5;
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.ig{
+		display: none;
+	}
+
+	.future{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 100%;
+		display: block;
+	}
+
+	footer{
+		background: url('../img/page.png');
+		color: #191919;
+	}
+
+	.credit{
+		color: #191919;
+	}
+
+	form{
+	    color: #191919;
+	}
+
+	form label{
+	    color: #191919;
+	}
+
+	form input:focus, form textarea:focus{
+		outline: none;
+	}
+
+	form input, form textarea{
+		color: #191919;
+		padding: 5px;
+		border: none;
+		border-bottom: 1px solid #191919;
+	}
+
+	form input[type="submit"]{
+		background: transparent;
+		border: 1px solid black;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+
+	form input[type="submit"]:hover{
+		background: black;
+		color: white;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+}
+
+@media screen and (min-width: 640px) {
 	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
 	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
 	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
@@ -26,7 +393,412 @@ nav{z-index: 9999;}
 	}
 
 	nav a{
-		padding-top: 20px;
+		padding-top: 0px;
+		float: right;
+		font-family: 'Roboto Condensed';
+		padding-left: 20px;
+		padding-right: 20px;
+		display: block;
+	}
+
+	nav a:link, nav a:visited, nav a:hover, nav a:active{
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 16px;
+	}
+
+	header{
+		background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)), url("../img/header.jpg");
+		background-size: 100%;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: auto;
+	}
+
+	#tag{
+		padding-top: 270px;
+		padding-bottom: 200px;
+	}
+
+	#tag h1{
+		font-family: "Fira Sans";
+		font-size: 42px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+    #tag h2{
+		font-family: "Fira Sans";
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+	#tag h1 span{
+		padding: 20px;
+		border: 2px solid white;
+		outline: 2px solid white;
+		outline-offset: 5px;
+	}
+
+	#tag hr{
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#tag h3{
+		font-size: 32px;
+	}
+
+	.profile{
+		margin-top: -150px;
+		margin-left: -5%;
+		position: absolute;
+		background: url('../img/yuval.jpg');
+		width: 96px;
+		height: 96px;
+		display: inline;
+		border-radius: 100%;
+		z-index: 20;
+		background-size: 100%;
+		background-position: center center;
+	}
+
+	.image{width: 27.25px;height: 15px;}
+
+	#content{z-index: 0;}
+
+	section{
+		margin: 0;
+		background: url('../img/page.png');
+		width: auto;
+		position: relative;
+		display: block;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+
+	.card{
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.card h1{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 32px;
+	}
+
+	.card h2{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 24px;
+	}
+
+	.card hr{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 25%;
+		float: left;
+		display: block;
+	}
+
+	.card p, form input, form, form textarea{
+		font-size: 20px;
+		color: #191919;
+		resize: none;
+	}
+
+	.twitter{
+		display: inline-block;
+		width: 47.5;
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.ig{
+		display: none;
+	}
+
+	.future{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 100%;
+		display: block;
+	}
+
+	footer{
+		background: url('../img/page.png');
+		color: #191919;
+	}
+
+	.credit{
+		color: #191919;
+	}
+
+	form{
+	    color: #191919;
+	}
+
+	form label{
+	    color: #191919;
+	}
+
+	form input:focus, form textarea:focus{
+		outline: none;
+	}
+
+	form input, form textarea{
+		color: #191919;
+		padding: 5px;
+		border: none;
+		border-bottom: 1px solid #191919;
+	}
+
+	form input[type="submit"]{
+		background: transparent;
+		border: 1px solid black;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+
+	form input[type="submit"]:hover{
+		background: black;
+		color: white;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
+	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
+	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
+	.normal .fa{color: #191919;}
+	nav{
+		display: inline;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 15px;
+	}
+
+	nav a{
+		padding-top: 10px;
+		float: right;
+		font-family: 'Roboto Condensed';
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	nav a:link, nav a:visited, nav a:hover, nav a:active{
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	header{
+		background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)), url("../img/header.jpg");
+		background-size: 100%;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: auto;
+	}
+
+	#tag{
+		padding-top: 270px;
+		padding-bottom: 200px;
+	}
+
+	#tag h1{
+		font-family: "Fira Sans";
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+    #tag h2{
+		font-family: "Fira Sans";
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+	#tag h1 span{
+		padding: 20px;
+		border: 2px solid white;
+		outline: 2px solid white;
+		outline-offset: 5px;
+	}
+
+	#tag hr{
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#tag h3{
+		font-size: 32px;
+	}
+
+	.profile{
+		margin-top: -150px;
+		margin-left: -5%;
+		position: absolute;
+		background: url('../img/yuval.jpg');
+		width: 96px;
+		height: 96px;
+		display: inline;
+		border-radius: 100%;
+		z-index: 20;
+		background-size: 100%;
+		background-position: center center;
+	}
+
+	.image{
+		display: inline;
+		height: 33px;
+		width: 54.5px;
+	}
+
+	#content{z-index: 0;}
+
+	section{
+		margin: 0;
+		background: url('../img/page.png');
+		width: auto;
+		position: relative;
+		display: block;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+
+	.card{
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.card h1{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 32px;
+	}
+
+	.card h2{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 24px;
+	}
+
+	.card hr{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 25%;
+		float: left;
+		display: block;
+	}
+
+	.card p, form input, form, form textarea{
+		font-size: 20px;
+		color: #191919;
+		resize: none;
+	}
+
+	.twitter{
+		display: inline-block;
+		width: 47.5;
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.ig{
+		display: none;
+	}
+
+	.future{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 100%;
+		display: block;
+	}
+
+	footer{
+		background: url('../img/page.png');
+		color: #191919;
+	}
+
+	.credit{
+		color: #191919;
+	}
+
+	form{
+	    color: #191919;
+	}
+
+	form label{
+	    color: #191919;
+	}
+
+	form input:focus, form textarea:focus{
+		outline: none;
+	}
+
+	form input, form textarea{
+		color: #191919;
+		padding: 5px;
+		border: none;
+		border-bottom: 1px solid #191919;
+	}
+
+	form input[type="submit"]{
+		background: transparent;
+		border: 1px solid black;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+
+	form input[type="submit"]:hover{
+		background: black;
+		color: white;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
+	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
+	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
+	.normal .fa{color: #191919;}
+	nav{
+		display: inline;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 15px;
+	}
+
+	nav a{
+		padding-top: 10px;
 		float: right;
 		font-family: 'Roboto Condensed';
 		padding-left: 50px;
@@ -37,8 +809,8 @@ nav{z-index: 9999;}
 		text-decoration: none;
 		color: #fff;
 		text-transform: uppercase;
-		font-weight: 300;
-		font-size: 24px;
+		font-weight: 400;
+		font-size: 16px;
 	}
 
 	header{
@@ -87,7 +859,7 @@ nav{z-index: 9999;}
 
 	.profile{
 		margin-top: -150px;
-		margin-left: -1%;
+		margin-left: -5%;
 		position: absolute;
 		background: url('../img/yuval.jpg');
 		width: 96px;
@@ -97,6 +869,214 @@ nav{z-index: 9999;}
 		z-index: 20;
 		background-size: 100%;
 		background-position: center center;
+	}
+
+	.image{
+		height: 33px;
+		width: 54.5px;
+	}
+
+	#content{z-index: 0;}
+
+	section{
+		margin: 0;
+		background: url('../img/page.png');
+		width: auto;
+		position: relative;
+		display: block;
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+
+	.card{
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.card h1{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 32px;
+	}
+
+	.card h2{
+		font-family: "Liberation Serif";
+		color: black;
+		font-size: 24px;
+	}
+
+	.card hr{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 25%;
+		float: left;
+		display: block;
+	}
+
+	.card p, form input, form, form textarea{
+		font-size: 20px;
+		color: #191919;
+		resize: none;
+	}
+
+	.twitter{
+		display: inline-block;
+		width: 47.5;
+		height: 100%;
+		padding: 1.5rem;
+		box-shadow: 0 1px 2px #aaa;
+		background: white;
+		border-radius: 3px;
+	}
+
+	.ig{
+		display: none;
+	}
+
+	.future{
+		border: 1px dashed rgba(25, 25, 25, 0.3);
+		border-radius: 0px;
+		width: 100%;
+		display: block;
+	}
+
+	footer{
+		background: url('../img/page.png');
+		color: #191919;
+	}
+
+	.credit{
+		color: #191919;
+	}
+
+	form{
+	    color: #191919;
+	}
+
+	form label{
+	    color: #191919;
+	}
+
+	form input:focus, form textarea:focus{
+		outline: none;
+	}
+
+	form input, form textarea{
+		color: #191919;
+		padding: 5px;
+		border: none;
+		border-bottom: 1px solid #191919;
+	}
+
+	form input[type="submit"]{
+		background: transparent;
+		border: 1px solid black;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+
+	form input[type="submit"]:hover{
+		background: black;
+		color: white;
+		-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.init{background: transparent;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;}
+	.normal{background: #F2F1EF;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;o-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);}
+	.normal a:active, .normal a:hover, .normal a:visited, .normal a:link{color: #191919;}
+	.normal .fa{color: #191919;}
+	nav{
+		display: inline;
+		position: fixed;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 15px;
+	}
+
+	nav a{
+		padding-top: 25px;
+		float: right;
+		font-family: 'Roboto Condensed';
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	nav a:link, nav a:visited, nav a:hover, nav a:active{
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 20px;
+	}
+
+	header{
+		background: linear-gradient(rgba(20,20,20, .4),rgba(20,20,20, .4)), url("../img/header.jpg");
+		background-size: 100%;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: auto;
+	}
+
+	#tag{
+		padding-top: 270px;
+		padding-bottom: 200px;
+	}
+
+	#tag h1{
+		font-family: "Fira Sans";
+		font-size: 72px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+        #tag h2{
+		font-family: "Fira Sans";
+		font-size: 48px;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+	}
+
+	#tag h1 span{
+		padding: 20px;
+		border: 2px solid white;
+		outline: 2px solid white;
+		outline-offset: 5px;
+	}
+
+	#tag hr{
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#tag h3{
+		font-size: 32px;
+	}
+
+	.profile{
+		margin-top: -150px;
+		margin-left: -5%;
+		position: absolute;
+		background: url('../img/yuval.jpg');
+		width: 96px;
+		height: 96px;
+		display: inline;
+		border-radius: 100%;
+		z-index: 20;
+		background-size: 100%;
+		background-position: center center;
+	}
+
+	.image{
+		height: 66px;
+		width: 109px;
 	}
 
 	#content{z-index: 0;}
