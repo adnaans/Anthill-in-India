@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,300,400italic,500,700|Roboto+Condensed:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto+Condensed:400,300');
 
 @font-face{
 	font-family: "Liberation Serif";
@@ -8,34 +8,4 @@
 		 url('../fonts/LiberationSerif-Regular-webfont.svg') format('svg');
 	font-style: normal;
 	font-weight: normal;
-}
-
-@font-face{
-	font-family: "Liberation Serif";
-	src: url('../fonts/LiberationSerif-Italic-webfont.eot');
-	src: url('../fonts/LiberationSerif-Italic-webfont.woff') format('woff'),
-		 url('../fonts/LiberationSerif-Italic-webfont.ttf') format('truetype'),
-		 url('../fonts/LiberationSerif-Italic-webfont.svg') format('svg');
-	font-style: italic;
-	font-weight: normal;
-}
-
-@font-face{
-	font-family: "Liberation Serif";
-	src: url('../fonts/LiberationSerif-Bold-webfont.eot');
-	src: url('../fonts/LiberationSerif-Bold-webfont.woff') format('woff'),
-		 url('../fonts/LiberationSerif-Bold-webfont.ttf') format('truetype'),
-		 url('../fonts/LiberationSerif-Bold-webfont.svg') format('svg');
-	font-style: normal;
-	font-weight: bold;
-}
-
-@font-face{
-	font-family: "Liberation Serif";
-	src: url('../fonts/LiberationSerif-BoldItalic-webfont.eot');
-	src: url('../fonts/LiberationSerif-BoldItalic-webfont.woff') format('woff'),
-		 url('../fonts/LiberationSerif-BoldItalic-webfont.ttf') format('truetype'),
-		 url('../fonts/LiberationSerif-BoldItalic-webfont.svg') format('svg');
-	font-style: italic;
-	font-weight: bold;
 }
